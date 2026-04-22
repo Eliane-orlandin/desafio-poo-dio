@@ -1,0 +1,42 @@
+# --- JAVA ---
+# Ignora arquivos compilados (o que o Java gera ao rodar)
+*.class
+
+# Ignora logs de erro e de execução
+*.log
+hs_err_pid*
+replay_pid*
+
+# Ignora arquivos de pacote e bibliotecas
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# --- BUILD & OUTPUT ---
+# Ignora a pasta onde o VS Code coloca os arquivos compilados
+bin/
+# Se usar Maven no futuro, ignora a pasta de saída
+target/
+# Se usar Gradle no futuro, ignora a pasta de saída
+build/
+.gradle/
+
+# --- VS CODE & IDEs ---
+# Ignora toda a pasta de configuração do VS Code (limpeza total)
+.vscode/
+
+# Ignora o histórico local do VS Code
+.history/
+
+# Arquivos que a extensão de Java cria automaticamente (padrão Eclipse)
+.project
+.classpath
+.settings/
+.factorypath
+
+# --- SISTEMA OPERACIONAL ---
+.DS_Store
+Thumbs.db
